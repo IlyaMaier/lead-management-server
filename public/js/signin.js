@@ -13,7 +13,7 @@ const uiConfig = {
             clientId: CLIENT_ID
         },
     ],
-    'credentialHelper': CLIENT_ID && CLIENT_ID !== 'YOUR_OAUTH_CLIENT_ID' ?
+    'credentialHelper': CLIENT_ID && CLIENT_ID != 'YOUR_OAUTH_CLIENT_ID' ?
         firebaseui.auth.CredentialHelper.GOOGLE_YOLO : firebaseui.auth.CredentialHelper.ACCOUNT_CHOOSER_COM
 };
 
