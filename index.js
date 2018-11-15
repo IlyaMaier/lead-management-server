@@ -43,5 +43,17 @@ io.on('connection', (socket) => {
 });
 
 http.listen(4000, () => {
-  console.log('Listening on port 4000');
-})
+    console.log('Listening on port 4000');
+});
+
+module.exports = {
+    substractNumbers: function (number1, number2) {
+        return number1 - number2;
+    },
+    divideNumbers: function (number1, number2) {
+        return number1 / number2;
+    },
+    iLoveGCI: function () {
+        return 'I love GCI';
+    }
+};
